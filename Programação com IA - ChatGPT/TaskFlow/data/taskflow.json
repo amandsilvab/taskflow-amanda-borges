@@ -1,0 +1,195 @@
+{
+  "version": 1,
+  "members": [
+    {
+      "id": "member-ana",
+      "name": "Ana Silveira",
+      "role": "Tech Lead",
+      "area": "Tech Lead",
+      "email": ""
+    },
+    {
+      "id": "member-lucas",
+      "name": "Lucas Almeida",
+      "role": "Desenvolvedor",
+      "area": "Desenvolvedor",
+      "email": ""
+    }
+  ],
+  "projects": [
+    {
+      "id": "project-taskflow",
+      "name": "Plataforma TaskFlow",
+      "description": "Evolução da experiência de gestão de tarefas.",
+      "color": "#fbe8d8",
+      "accent": "#c2652a",
+      "icon": "dashboard",
+      "createdAt": "2026-10-17T18:21:41.034Z"
+    },
+    {
+      "id": "project-research",
+      "name": "Pesquisa de produto",
+      "description": "Entender necessidades e oportunidades para o produto.",
+      "color": "#e9e8f3",
+      "accent": "#706a99",
+      "icon": "search_insights",
+      "createdAt": "2026-10-17T18:21:41.034Z"
+    },
+    {
+      "id": "project-brand",
+      "name": "Identidade visual",
+      "description": "Uma linguagem visual clara e acolhedora para o TaskFlow.",
+      "color": "#e8eee4",
+      "accent": "#5d785d",
+      "icon": "palette",
+      "createdAt": "2026-10-17T18:21:41.034Z"
+    }
+  ],
+  "tasks": [
+    {
+      "id": "d27d104b-7ec0-4cfb-a7d9-3ecf1323a5a5",
+      "title": "Fazer Relatório de Não Conformidade",
+      "description": "Para Reunião de produção de terça-feira 20/10",
+      "projectId": null,
+      "assigneeId": null,
+      "status": "in_progress",
+      "priority": "high",
+      "dueDate": "2026-10-20",
+      "category": "Eng. de Qualidade",
+      "tags": [],
+      "subtasks": [],
+      "comments": [],
+      "createdAt": "2026-10-17T18:55:31.676Z",
+      "updatedAt": "2026-10-17T18:55:48.409Z"
+    },
+    {
+      "id": "task-brief",
+      "title": "Revisar briefing do produto",
+      "description": "Consolidar os requisitos e critérios de aceite para a primeira entrega.",
+      "projectId": "project-taskflow",
+      "assigneeId": "member-ana",
+      "status": "done",
+      "priority": "high",
+      "dueDate": "2026-10-18",
+      "category": "Produto",
+      "tags": [
+        "planejamento",
+        "MVP"
+      ],
+      "subtasks": [
+        {
+          "id": "subtask-brief-1",
+          "title": "Revisar critérios de aceite",
+          "done": true
+        },
+        {
+          "id": "subtask-brief-2",
+          "title": "Compartilhar versão final",
+          "done": false
+        }
+      ],
+      "comments": [
+        {
+          "id": "comment-brief-1",
+          "text": "Vamos revisar os últimos pontos na próxima conversa.",
+          "author": "Ana Silveira",
+          "createdAt": "2026-10-17T18:21:41.034Z"
+        }
+      ],
+      "createdAt": "2026-10-17T18:21:41.034Z",
+      "updatedAt": "2026-10-17T19:05:58.334Z"
+    },
+    {
+      "id": "task-dashboard",
+      "title": "Criar wireframes do dashboard",
+      "description": "Explorar uma hierarquia visual simples para destacar prioridades e prazos.",
+      "projectId": "project-taskflow",
+      "assigneeId": null,
+      "status": "in_progress",
+      "priority": "medium",
+      "dueDate": "2026-10-20",
+      "category": "Design",
+      "tags": [
+        "interface",
+        "dashboard"
+      ],
+      "subtasks": [],
+      "comments": [],
+      "createdAt": "2026-10-17T18:21:41.034Z",
+      "updatedAt": "2026-10-17T19:22:05.720Z"
+    },
+    {
+      "id": "task-interviews",
+      "title": "Sintetizar entrevistas com usuários",
+      "description": "Agrupar aprendizados e oportunidades de melhoria.",
+      "projectId": "project-research",
+      "assigneeId": null,
+      "status": "review",
+      "priority": "medium",
+      "dueDate": "2026-10-22",
+      "category": "Pesquisa",
+      "tags": [
+        "usuários"
+      ],
+      "subtasks": [],
+      "comments": [],
+      "createdAt": "2026-10-17T18:21:41.034Z",
+      "updatedAt": "2026-10-17T19:21:58.725Z"
+    },
+    {
+      "id": "task-colors",
+      "title": "Definir paleta de cores",
+      "description": "Documentar as cores principais e estados de interface.",
+      "projectId": "project-brand",
+      "assigneeId": null,
+      "status": "done",
+      "priority": "low",
+      "dueDate": "2026-10-15",
+      "category": "Identidade",
+      "tags": [
+        "visual"
+      ],
+      "subtasks": [],
+      "comments": [],
+      "createdAt": "2026-10-17T18:21:41.034Z",
+      "updatedAt": "2026-10-17T19:22:05.720Z"
+    },
+    {
+      "id": "task-api",
+      "title": "Preparar estrutura de dados local",
+      "description": "Criar a estrutura para tarefas e projetos com armazenamento no dispositivo.",
+      "projectId": "project-taskflow",
+      "assigneeId": "member-lucas",
+      "status": "todo",
+      "priority": "high",
+      "dueDate": "2026-10-16",
+      "category": "Desenvolvimento",
+      "tags": [
+        "API",
+        "MVP"
+      ],
+      "subtasks": [],
+      "comments": [],
+      "createdAt": "2026-10-17T18:21:41.034Z",
+      "updatedAt": "2026-10-17T18:21:41.034Z"
+    },
+    {
+      "id": "task-usability",
+      "title": "Validar fluxo de criação de tarefa",
+      "description": "Conferir os campos e estados do formulário de tarefa.",
+      "projectId": "project-taskflow",
+      "assigneeId": "member-ana",
+      "status": "in_progress",
+      "priority": "medium",
+      "dueDate": "2026-10-24",
+      "category": "Produto",
+      "tags": [
+        "usabilidade"
+      ],
+      "subtasks": [],
+      "comments": [],
+      "createdAt": "2026-10-17T18:21:41.034Z",
+      "updatedAt": "2026-10-17T18:21:41.034Z"
+    }
+  ]
+}

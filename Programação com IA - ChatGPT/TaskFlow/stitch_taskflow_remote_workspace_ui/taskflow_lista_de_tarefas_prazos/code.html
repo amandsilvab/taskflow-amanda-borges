@@ -1,0 +1,798 @@
+<!DOCTYPE html><html lang="pt-BR"><head><meta charset="utf-8"><meta content="width=device-width, initial-scale=1.0" name="viewport"><meta content="web_dashboard" name="shell-type"><link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&amp;family=Manrope:wght@300..800&amp;display=swap" rel="stylesheet"><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={"darkMode":"class","theme":{"extend":{"colors":{"on-error":"#ffffff","on-surface-variant":"#605850","on-primary-fixed-variant":"#8a4518","surface-dim":"#dcd6cc","error-container":"#fce4e0","on-surface":"#3a302a","tertiary-container":"#d47070","on-secondary-fixed-variant":"#504840","on-tertiary-fixed":"#2e1515","on-secondary-container":"#605850","surface-variant":"#ece6dc","surface-container-highest":"#e6e0d6","primary-container":"#e08850","surface-container":"#f2ece4","tertiary-fixed":"#fce0e0","on-primary":"#ffffff","outline-variant":"#d8d0c8","surface-container-high":"#ece6dc","on-secondary":"#ffffff","tertiary-fixed-dim":"#e8a0a0","on-tertiary-container":"#3a2020","surface":"#faf5ee","surface-tint":"#c2652a","background":"#faf5ee","surface-container-lowest":"#ffffff","on-primary-fixed":"#401a08","on-tertiary-fixed-variant":"#6e3030","on-tertiary":"#ffffff","primary-fixed-dim":"#f0a878","surface-bright":"#faf5ee","secondary-container":"#eae2da","secondary":"#78706a","tertiary":"#8c3c3c","secondary-fixed":"#eae2da","outline":"#9a9088","inverse-surface":"#3a302a","inverse-on-surface":"#faf5ee","on-error-container":"#7a1a10","on-primary-container":"#fbe8d8","surface-container-low":"#f6f0e8","inverse-primary":"#f0a878","error":"#c0392b","secondary-fixed-dim":"#cec6be","primary":"#c2652a","on-background":"#3a302a","on-secondary-fixed":"#2a2420","primary-fixed":"#fbe8d8"},"borderRadius":{"DEFAULT":"0.25rem","lg":"0.5rem","xl":"0.75rem","full":"9999px"},"spacing":{},"fontFamily":{"headline":["EB Garamond"],"display":["EB Garamond"],"body":["Manrope"],"label":["Manrope"]},"fontSize":{}}}}</script></head><body class="bg-surface font-body text-on-surface antialiased"><aside class="fixed left-0 top-0 h-full w-72 bg-surface-container-low shadow-[0_1px_8px_rgba(58,48,42,0.04)] z-50 flex flex-col justify-between overflow-y-auto"><div class="flex flex-col"><div class="h-16 px-6 flex items-center gap-3 bg-surface-container-low"><img alt="TaskFlow Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1VBPCKgW0hvDQaLyXORQYGNzHHJMga5QbE4fI7HzmXAE7XsOYYDIOD1S9D9RIuex7OyCLcDqkTHqFm_4i5ztAOCNDiThr3uMGXe5PV7buzBLvfR5T8RxeDNwN_b8pTgWD_Bqys8AmhNNjrwCSqKo-BZCOYZ8J_lkDqckb5PPiNOU9K6Eh9otzlD5Aqy7D9EJInyIDovq-JmG-yBgeMP_kez5rXAPzTofD_2KlIxhZtoZKxjlq3LXZpzO6C7"><div class="flex flex-col"><span class="font-headline text-xl font-bold tracking-tight text-on-surface leading-none">TaskFlow</span><span class="text-[10px] uppercase font-label tracking-wider text-secondary mt-0.5">Workspace Pro</span></div></div><div class="px-4 py-3"><div class="p-2.5 rounded-lg bg-surface-container flex items-center justify-between"><div class="flex items-center gap-2.5"><div class="w-7 h-7 rounded-md bg-primary-fixed flex items-center justify-center text-on-primary-fixed"><span class="material-symbols-outlined text-base">domain</span></div><div class="flex flex-col leading-tight"><span class="text-xs font-semibold text-on-surface">Design &amp; Eng Squad</span><span class="text-[11px] text-on-surface-variant">14 membros</span></div></div><span class="material-symbols-outlined text-secondary text-lg">unfold_more</span></div></div><nav class="px-3 py-2 space-y-6" data-active-classes="bg-primary text-on-primary font-semibold shadow-[0_2px_16px_rgba(58,48,42,0.04)]"><div class="space-y-1"><div class="px-3 pb-1 text-[11px] font-semibold uppercase tracking-wider text-secondary">Principal</div><a class="flex items-center gap-3 px-3 py-2 rounded-lg text-sm text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="dashboard-visao-geral" href="#"><span class="material-symbols-outlined text-xl">dashboard</span><span class="">Visão Geral</span></a><a class="flex items-center gap-3 px-3 py-2 rounded-lg text-sm text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="projetos" href="#"><span class="material-symbols-outlined text-xl">folder_open</span><span class="">Projetos</span></a><a class="flex items-center gap-3 px-3 py-2 rounded-lg text-sm text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="minhas-tarefas" href="#"><span class="material-symbols-outlined text-xl">check_box</span><span class="">Minhas Tarefas</span></a><a class="flex items-center gap-3 px-3 py-2 rounded-lg text-sm text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="quadro-kanban" href="#"><span class="material-symbols-outlined text-xl">view_kanban</span><span class="">Quadro Kanban</span></a><a aria-current="page" class="flex items-center gap-3 px-3 py-2 rounded-lg transition-colors bg-primary text-on-primary font-semibold shadow-[0_2px_16px_rgba(58,48,42,0.04)]" data-path="lista-de-tarefas" href="#"><span class="material-symbols-outlined text-xl">format_list_bulleted</span><span class="">Lista de Tarefas</span></a></div><div class="space-y-1"><div class="px-3 pb-1 text-[11px] font-semibold uppercase tracking-wider text-secondary">Gestão</div><a class="flex items-center gap-3 px-3 py-2 rounded-lg text-sm text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="prazos-calendario" href="#"><span class="material-symbols-outlined text-xl">calendar_today</span><span class="">Prazos &amp; Calendário</span></a><a class="flex items-center gap-3 px-3 py-2 rounded-lg text-sm text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="indicadores-metricas" href="#"><span class="material-symbols-outlined text-xl">insights</span><span class="">Indicadores &amp; Métricas</span></a><a class="flex items-center gap-3 px-3 py-2 rounded-lg text-sm text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="equipe-permissoes" href="#"><span class="material-symbols-outlined text-xl">group</span><span class="">Equipe &amp; Permissões</span></a></div><div class="space-y-1"><div class="px-3 pb-1 text-[11px] font-semibold uppercase tracking-wider text-secondary">Suporte &amp; Docs</div><a class="flex items-center gap-3 px-3 py-2 rounded-lg text-sm text-on-surface-variant hover:bg-surface-container hover:text-on-surface transition-colors" data-path="central-de-ajuda" href="#"><span class="material-symbols-outlined text-xl">help_outline</span><span class="">Central de Ajuda</span></a></div></nav></div><div class="p-4 mx-3 mb-4 rounded-xl bg-surface-container-high/60"><div class="flex items-center justify-between mb-2"><span class="text-xs font-semibold text-on-surface">Uso da Squad</span><span class="text-[11px] font-medium text-secondary">82%</span></div><div class="w-full h-1.5 rounded-full bg-secondary-container overflow-hidden"><div class="h-full bg-primary rounded-full w-4/5"></div></div><p class="mt-2 text-[11px] text-on-surface-variant leading-relaxed">8 de 10 assentos ativos utilizados no plano Pro.</p></div></aside><div class="pl-72 flex flex-col min-h-screen"><header class="fixed top-0 left-72 right-0 h-16 bg-surface/85 backdrop-blur-xl shadow-[0_1px_8px_rgba(58,48,42,0.04)] z-40 px-8 flex items-center justify-between gap-4"><div class="flex items-center gap-4 flex-1 max-w-md"><div class="relative w-full"><span class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-secondary text-lg">search</span><input class="w-full pl-9 pr-14 py-2 text-xs bg-surface-container-lowest text-on-surface placeholder:text-secondary rounded-lg focus:outline-none focus:ring-1 focus:ring-primary shadow-[0_2px_16px_rgba(58,48,42,0.04)]" placeholder="Buscar tarefas, projetos, tags..." type="text"><span class="absolute right-2.5 top-1/2 -translate-y-1/2 px-1.5 py-0.5 rounded text-[10px] font-semibold bg-surface-variant text-on-surface-variant tracking-wider font-label">⌘K</span></div></div><div class="flex items-center gap-4"><div class="hidden lg:flex items-center gap-2 px-3 py-1.5 rounded-full bg-surface-container-low text-xs text-on-surface-variant"><span class="w-2 h-2 rounded-full bg-emerald-600 animate-pulse"></span><span class="font-label font-medium text-[11px]">Sincronizado</span></div><button class="flex items-center gap-1.5 px-3 py-2 rounded-lg bg-primary text-on-primary hover:bg-primary-container hover:text-on-primary-container text-xs font-semibold shadow-[0_2px_16px_rgba(58,48,42,0.04)] transition-all" type="button"><span class="material-symbols-outlined text-base">add</span><span class="">Nova Tarefa</span></button><button aria-label="Alternar modo claro e escuro" class="relative p-2 rounded-lg text-secondary hover:text-on-surface hover:bg-surface-container transition-colors" id="theme-toggle-btn" title="Alternar tema claro/escuro" type="button"><span class="material-symbols-outlined text-xl">light_mode</span></button><button aria-label="Notificações" class="relative p-2 rounded-lg text-secondary hover:text-on-surface hover:bg-surface-container transition-colors" type="button"><span class="material-symbols-outlined text-xl">notifications</span><span class="absolute top-1 right-1 w-4 h-4 bg-tertiary text-on-tertiary text-[10px] font-bold rounded-full flex items-center justify-center font-label">3</span></button><div class="flex items-center gap-3 pl-3"><div class="relative flex items-center gap-2 cursor-pointer group"><img alt="Profile" class="w-8 h-8 rounded-full object-cover ring-2 ring-primary/20" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDHKT5nrgjNpjYQIri6EuS5d-pUXakGjayoe9RFAQWix876fOpipw9OP2u9WpsgzuSiU33NrkUe9XMQi-cCEakjGkOkJ6PiGqP5H73b3pBo96f87AAYG-oJDSIhXZFI0xCntoQvI_weeyyj1DerkSwfvaVKED74TDbbrLlfohQpV1GWe00wgiYaey5SZULbyWsHdNP0TPmYA36N3AC1V9c4YUbVz_0KCgEGUafjCXC-4VQmZToe4nO-BA"><div class="hidden md:flex flex-col text-left"><span class="text-xs font-semibold text-on-surface group-hover:text-primary transition-colors">Ana Silveira</span><span class="text-[10px] font-label px-1.5 py-0.2 rounded bg-surface-container-high text-on-surface-variant font-medium self-start">Tech Lead</span></div><span class="material-symbols-outlined text-secondary text-sm">keyboard_arrow_down</span></div></div></div></header><main class="relative pt-16 w-full px-8 pb-12 bg-surface"><div class="flex flex-col w-full">
+<!-- Subtle Ambient Top Light -->
+<div class="relative w-full overflow-hidden mb-6">
+<div class="absolute -top-16 -right-16 w-80 h-80 rounded-full bg-primary/5 blur-3xl pointer-events-none"></div>
+<div class="absolute -top-10 left-1/3 w-64 h-64 rounded-full bg-tertiary/5 blur-2xl pointer-events-none"></div>
+<!-- Header & Summary Meta Strip -->
+<div class="relative flex flex-col md:flex-row md:items-end justify-between gap-4 pt-2 pb-4">
+<div>
+<div class="flex items-center gap-2 mb-1">
+<span class="text-[11px] font-label font-bold tracking-widest text-primary uppercase">Workspace / Gestão Ativa</span>
+<span class="w-1.5 h-1.5 rounded-full bg-secondary/40"></span>
+<span class="text-[11px] font-label text-secondary">Atualizado há 4 min</span>
+</div>
+<h1 class="font-headline text-3xl md:text-4xl font-normal text-on-surface tracking-tight">Lista &amp; Prazos de Tarefas</h1>
+<p class="text-xs md:text-sm text-on-surface-variant font-body mt-1 max-w-xl">
+          Controle centralizado de entregas críticas, cronogramas por sprint e distribuição de demandas operacionais.
+        </p>
+</div>
+<!-- Quick KPI Spark Mini-cards -->
+<div class="flex items-center gap-3">
+<div class="px-3.5 py-2.5 rounded-xl bg-surface-container shadow-sm flex items-center gap-3">
+<div class="w-8 h-8 rounded-lg bg-surface-container-high flex items-center justify-center text-primary">
+<span class="material-symbols-outlined text-lg">pending_actions</span>
+</div>
+<div class="flex flex-col">
+<span class="text-[10px] font-label text-secondary uppercase font-semibold">Em Aberto</span>
+<span class="text-base font-headline font-bold text-on-surface leading-none">42</span>
+</div>
+</div>
+<div class="px-3.5 py-2.5 rounded-xl bg-error-container/60 shadow-sm flex items-center gap-3">
+<div class="w-8 h-8 rounded-lg bg-tertiary-fixed flex items-center justify-center text-tertiary">
+<span class="material-symbols-outlined text-lg">warning</span>
+</div>
+<div class="flex flex-col">
+<span class="text-[10px] font-label text-on-error-container uppercase font-semibold">Atrasadas</span>
+<span class="text-base font-headline font-bold text-error leading-none">05</span>
+</div>
+</div>
+<div class="px-3.5 py-2.5 rounded-xl bg-surface-container shadow-sm flex items-center gap-3">
+<div class="w-8 h-8 rounded-lg bg-surface-container-high flex items-center justify-center text-secondary">
+<span class="material-symbols-outlined text-lg">task_alt</span>
+</div>
+<div class="flex flex-col">
+<span class="text-[10px] font-label text-secondary uppercase font-semibold">Concluídas Mês</span>
+<span class="text-base font-headline font-bold text-on-surface leading-none">128</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Primary Filter Bar & Bulk Operations Section -->
+<div class="relative bg-surface-container-lowest rounded-2xl shadow-sm p-4 mb-4 flex flex-col gap-3.5">
+<!-- Top Filter Controls Layer -->
+<div class="flex flex-wrap items-center justify-between gap-3">
+<!-- Search Input with Keyboard Indicator -->
+<div class="relative flex-1 min-w-[260px] max-w-md">
+<span class="material-symbols-outlined absolute left-3.5 top-1/2 -translate-y-1/2 text-secondary text-lg pointer-events-none">search</span>
+<input class="w-full pl-10 pr-20 py-2 text-xs bg-surface-container-low text-on-surface placeholder:text-secondary rounded-lg focus:outline-none focus:bg-surface-container-lowest focus:ring-2 focus:ring-primary/40 shadow-inner font-body transition-all" id="task-search-input" placeholder="Filtrar por nome, tag, ID (TK-XXX)..." type="text">
+<div class="absolute right-2.5 top-1/2 -translate-y-1/2 flex items-center gap-1 pointer-events-none">
+<kbd class="px-1.5 py-0.5 rounded text-[10px] font-mono bg-surface-container-high text-on-surface-variant font-medium">Ctrl</kbd>
+<kbd class="px-1.5 py-0.5 rounded text-[10px] font-mono bg-surface-container-high text-on-surface-variant font-medium">F</kbd>
+</div>
+</div>
+<!-- Quick Status Badges Filter -->
+<div class="flex items-center gap-1.5 p-1 rounded-xl bg-surface-container-low overflow-x-auto text-xs font-label">
+<button class="px-3 py-1.5 rounded-lg bg-primary text-on-primary font-semibold shadow-sm transition-colors text-xs whitespace-nowrap" type="button">Todas (84)</button>
+<button class="px-3 py-1.5 rounded-lg text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-colors text-xs whitespace-nowrap" type="button">Abertas (42)</button>
+<button class="px-3 py-1.5 rounded-lg text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-colors text-xs whitespace-nowrap" type="button">Atrasadas (5)</button>
+<button class="px-3 py-1.5 rounded-lg text-on-surface-variant hover:text-on-surface hover:bg-surface-container transition-colors text-xs whitespace-nowrap" type="button">Concluídas (37)</button>
+</div>
+<!-- Secondary Filters & Density Toggles -->
+<div class="flex items-center gap-2">
+<!-- Squad / Project Dropdown -->
+<div class="relative">
+<select class="appearance-none pl-3 pr-8 py-2 text-xs rounded-lg bg-surface-container text-on-surface font-body font-medium focus:outline-none focus:ring-2 focus:ring-primary/40 cursor-pointer shadow-sm">
+<option>Todos os Projetos</option>
+<option>Design System v3</option>
+<option>App Mobile Checkout</option>
+<option>Infraestrutura AWS</option>
+<option>Portal B2B Parceiros</option>
+</select>
+<span class="material-symbols-outlined absolute right-2 top-1/2 -translate-y-1/2 text-secondary pointer-events-none text-base">expand_more</span>
+</div>
+<!-- Priority Filter -->
+<div class="relative">
+<select class="appearance-none pl-3 pr-8 py-2 text-xs rounded-lg bg-surface-container text-on-surface font-body font-medium focus:outline-none focus:ring-2 focus:ring-primary/40 cursor-pointer shadow-sm">
+<option>Prioridade: Todas</option>
+<option>Crítica</option>
+<option>Alta</option>
+<option>Média</option>
+<option>Baixa</option>
+</select>
+<span class="material-symbols-outlined absolute right-2 top-1/2 -translate-y-1/2 text-secondary pointer-events-none text-base">filter_list</span>
+</div>
+<!-- Density Toggle -->
+<div class="flex items-center p-0.5 rounded-lg bg-surface-container-low text-secondary" title="Densidade das linhas">
+<button aria-label="Densidade Confortável" class="p-1.5 rounded-md bg-surface-container-lowest text-primary shadow-sm" id="btn-density-comfortable" type="button">
+<span class="material-symbols-outlined text-base">view_headline</span>
+</button>
+<button aria-label="Densidade Compacta" class="p-1.5 rounded-md hover:text-on-surface transition-colors" id="btn-density-compact" type="button">
+<span class="material-symbols-outlined text-base">reorder</span>
+</button>
+</div>
+<!-- Export Action Menu Button -->
+<div class="relative">
+<button class="flex items-center gap-1.5 px-3 py-2 rounded-lg bg-surface-container-high hover:bg-secondary-container text-on-surface text-xs font-semibold shadow-sm transition-colors" id="export-btn" type="button">
+<span class="material-symbols-outlined text-base">file_download</span>
+<span class="hidden sm:inline">Exportar</span>
+</button>
+<!-- Export Dropdown -->
+<div class="hidden absolute right-0 mt-1.5 w-40 rounded-xl bg-surface-container-lowest shadow-xl py-1.5 z-30" id="export-menu">
+<a class="flex items-center gap-2 px-3 py-1.5 text-xs text-on-surface hover:bg-surface-container transition-colors" href="#">
+<span class="material-symbols-outlined text-sm text-secondary">table_view</span> Exportar CSV
+            </a>
+<a class="flex items-center gap-2 px-3 py-1.5 text-xs text-on-surface hover:bg-surface-container transition-colors" href="#">
+<span class="material-symbols-outlined text-sm text-secondary">picture_as_pdf</span> Relatório PDF
+            </a>
+<a class="flex items-center gap-2 px-3 py-1.5 text-xs text-on-surface hover:bg-surface-container transition-colors" href="#">
+<span class="material-symbols-outlined text-sm text-secondary">print</span> Imprimir Lista
+            </a>
+</div>
+</div>
+</div>
+</div>
+<!-- Active Selection & Bulk Action Toolbar (Appears dynamically) -->
+<div class="hidden items-center justify-between gap-3 p-3 rounded-xl bg-primary-fixed text-on-primary-fixed transition-all animate-fadeIn" id="bulk-actions-bar">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-primary text-xl">checklist</span>
+<span class="text-xs font-bold font-label tracking-wide"><span id="selected-count" class="">2</span> tarefas selecionadas</span>
+<span class="text-xs opacity-70">|</span>
+<button class="text-xs font-semibold underline underline-offset-2 hover:text-primary transition-colors" id="btn-select-all-rows" type="button">Selecionar todas 84 tarefas</button>
+</div>
+<div class="flex items-center gap-2">
+<!-- Change Status -->
+<div class="relative">
+<button class="flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-surface-container-lowest text-on-surface text-xs font-semibold hover:bg-surface-container shadow-sm transition-colors" type="button">
+<span class="material-symbols-outlined text-sm text-primary">published_with_changes</span>
+<span class="">Alterar Status</span>
+</button>
+</div>
+<!-- Assign Member -->
+<button class="flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-surface-container-lowest text-on-surface text-xs font-semibold hover:bg-surface-container shadow-sm transition-colors" type="button">
+<span class="material-symbols-outlined text-sm text-primary">person_add</span>
+<span class="">Atribuir</span>
+</button>
+<!-- Change Due Date -->
+<button class="flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-surface-container-lowest text-on-surface text-xs font-semibold hover:bg-surface-container shadow-sm transition-colors" type="button">
+<span class="material-symbols-outlined text-sm text-primary">event</span>
+<span class="">Alterar Prazo</span>
+</button>
+<!-- Delete with Warning trigger -->
+<button class="flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-tertiary-fixed text-tertiary text-xs font-bold hover:bg-tertiary-container hover:text-on-tertiary-container shadow-sm transition-colors" id="btn-trigger-bulk-delete" type="button">
+<span class="material-symbols-outlined text-sm">delete_sweep</span>
+<span class="">Excluir</span>
+</button>
+<!-- Dismiss Selection -->
+<button class="p-1 rounded-md text-on-primary-fixed-variant hover:text-on-primary-fixed" id="btn-clear-selection" title="Limpar seleção" type="button">
+<span class="material-symbols-outlined text-base">close</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Advanced Table Container with Horizontal Scroll Protection -->
+<div class="relative bg-surface-container-lowest rounded-2xl shadow-sm overflow-hidden mb-4">
+<div class="overflow-x-auto w-full">
+<table class="w-full text-left text-xs text-on-surface min-w-[1020px]" id="task-table">
+<!-- Table Header with Sortable Controls -->
+<thead class="bg-surface-container-low/75 text-secondary font-label uppercase text-[11px] tracking-wider select-none">
+<tr>
+<th class="w-12 px-4 py-3.5 text-center" scope="col">
+<label class="inline-flex items-center cursor-pointer">
+<input class="w-4 h-4 rounded bg-surface-container-lowest text-primary focus:ring-primary focus:ring-offset-0 cursor-pointer accent-primary" id="master-checkbox" type="checkbox">
+<span class="sr-only">Selecionar todas as tarefas visíveis</span>
+</label>
+</th>
+<th class="w-24 px-3 py-3.5 cursor-pointer hover:text-on-surface transition-colors" scope="col">
+<div class="flex items-center gap-1">
+<span class="">Código</span>
+<span class="material-symbols-outlined text-sm">swap_vert</span>
+</div>
+</th>
+<th class="min-w-[260px] px-3 py-3.5 cursor-pointer hover:text-on-surface transition-colors" scope="col">
+<div class="flex items-center gap-1">
+<span class="">Título &amp; Escopo</span>
+<span class="material-symbols-outlined text-sm text-primary font-bold">arrow_downward</span>
+</div>
+</th>
+<th class="w-40 px-3 py-3.5" scope="col">Projeto</th>
+<th class="w-44 px-3 py-3.5" scope="col">Responsável</th>
+<th class="w-28 px-3 py-3.5 cursor-pointer hover:text-on-surface transition-colors" scope="col">
+<div class="flex items-center gap-1">
+<span class="">Prioridade</span>
+<span class="material-symbols-outlined text-sm">swap_vert</span>
+</div>
+</th>
+<th class="w-44 px-3 py-3.5 cursor-pointer hover:text-on-surface transition-colors" scope="col">
+<div class="flex items-center gap-1">
+<span class="">Prazo de Entrega</span>
+<span class="material-symbols-outlined text-sm">swap_vert</span>
+</div>
+</th>
+<th class="w-32 px-3 py-3.5" scope="col">Progresso</th>
+<th class="w-20 px-4 py-3.5 text-right" scope="col">Ações</th>
+</tr>
+</thead>
+<!-- Table Body Rows -->
+<tbody class="divide-y-0" id="task-rows-body">
+<!-- Row 1: Overdue Task (Crítica) -->
+<tr class="table-row group hover:bg-surface-container/60 transition-colors focus-within:bg-surface-container-low" tabindex="0">
+<td class="px-4 py-3 text-center">
+<input class="row-checkbox w-4 h-4 rounded text-primary focus:ring-primary accent-primary cursor-pointer" type="checkbox">
+</td>
+<td class="px-3 py-3 font-mono text-[11px] font-semibold text-secondary">
+              TK-1084
+            </td>
+<td class="px-3 py-3">
+<div class="flex flex-col">
+<a class="font-headline text-base font-semibold text-on-surface hover:text-primary transition-colors focus:outline-none focus:underline leading-tight" href="#">
+                  Auditoria de Acessibilidade WCAG 2.2 AA no Portal
+                </a>
+<span class="text-[11px] text-on-surface-variant font-body line-clamp-1 mt-0.5">
+                  Revisar contraste cromático, navegação via Tab e suporte leitor de tela NVDA.
+                </span>
+</div>
+</td>
+<td class="px-3 py-3">
+<span class="px-2.5 py-1 rounded-md bg-surface-container text-on-surface-variant text-[11px] font-medium whitespace-nowrap">
+                Design System v3
+              </span>
+</td>
+<td class="px-3 py-3">
+<div class="flex items-center gap-2">
+<img class="w-6 h-6 rounded-full object-cover" data-alt="Close-up portrait of an experienced female UX researcher with soft natural morning light in a minimalist studio, warm terracotta background tones" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCrOBL4gfwvdduoF-0vNJibiNLKwm_J-KEt0w34deB0Uh2qsMVCnctxyhkIhiMILXaY7V6e0bbsCcQZDvj3uAY__WSNUQr640cLgFNVMTjEs-C8ovLQDWngmaA73niMZPcizFAs37QjdJI3_NAlUEIyKVnb65KBDjTJ_YcO8bb60mXFAzXXAg7sEIIudPovXeiAJgUIi2o_-84e9xn3GKwmNqldZl4VbmUxEL14pp6isHbk2xfqPf_6cQ">
+<span class="font-medium text-xs text-on-surface truncate">Beatriz Lima</span>
+</div>
+</td>
+<td class="px-3 py-3">
+<div class="inline-flex items-center gap-1.5 px-2 py-0.5 rounded-full bg-error-container text-on-error-container text-[11px] font-semibold">
+<span class="w-1.5 h-1.5 rounded-full bg-error"></span>
+<span class="">Crítica</span>
+</div>
+</td>
+<td class="px-3 py-3">
+<div class="flex items-center gap-2">
+<span class="px-2 py-0.5 rounded-md bg-tertiary-fixed text-tertiary text-[10px] font-bold tracking-tight uppercase whitespace-nowrap">
+                  Atrasada há 2 dias
+                </span>
+<span class="text-[11px] text-secondary font-mono">18/Mai</span>
+</div>
+</td>
+<td class="px-3 py-3">
+<div class="w-full">
+<div class="flex justify-between items-center mb-1 text-[10px] font-semibold text-secondary">
+<span class="">80%</span>
+</div>
+<div class="w-full h-1.5 rounded-full bg-surface-container overflow-hidden">
+<div class="h-full bg-tertiary rounded-full" style="width: 80%"></div>
+</div>
+</div>
+</td>
+<td class="px-4 py-3 text-right">
+<div class="relative inline-block text-left">
+<button aria-label="Ações da tarefa TK-1084" class="row-menu-btn p-1.5 rounded-lg text-secondary hover:text-on-surface hover:bg-surface-container transition-colors" type="button">
+<span class="material-symbols-outlined text-base">more_vert</span>
+</button>
+</div>
+</td>
+</tr>
+<!-- Row 2: Due Today (Alta) -->
+<tr class="table-row group bg-surface-container-low/30 hover:bg-surface-container/60 transition-colors focus-within:bg-surface-container-low" tabindex="0">
+<td class="px-4 py-3 text-center">
+<input class="row-checkbox w-4 h-4 rounded text-primary focus:ring-primary accent-primary cursor-pointer" type="checkbox">
+</td>
+<td class="px-3 py-3 font-mono text-[11px] font-semibold text-secondary">
+              TK-1085
+            </td>
+<td class="px-3 py-3">
+<div class="flex flex-col">
+<a class="font-headline text-base font-semibold text-on-surface hover:text-primary transition-colors focus:outline-none focus:underline leading-tight" href="#">
+                  Refatoração da Camada de Autenticação OAuth2 / JWT
+                </a>
+<span class="text-[11px] text-on-surface-variant font-body line-clamp-1 mt-0.5">
+                  Migração dos tokens para cookies HttpOnly e mitigação de vulnerabilidades CSRF.
+                </span>
+</div>
+</td>
+<td class="px-3 py-3">
+<span class="px-2.5 py-1 rounded-md bg-surface-container text-on-surface-variant text-[11px] font-medium whitespace-nowrap">
+                Infraestrutura AWS
+              </span>
+</td>
+<td class="px-3 py-3">
+<div class="flex items-center gap-2">
+<img class="w-6 h-6 rounded-full object-cover" data-alt="Headshot of a senior backend software engineer with glasses looking thoughtfully at the camera, warm linen lighting, minimal professional background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB3OXuGsLZlGIJIVu_j0HkVGtUTfSx1NjWuqaVaA9IL_sj2sepBGLJ9qzGq4LD0RBvViOpzJHy-M6eq8wGIF0I5h4jnNCOUyyP7w0Arosk8h-uDwatDMJlA7OvJEIqJRGV1TLw6cGswV8xOEjjR_7UBlebsdTuq45xuf0Ld8XeGeu6upllRWbq9BwDI7qyQ8wUXKDTKEsTxH4KO22gWqwg031oA0B5otTr8e1X0_Xe6sJYZDHPNbJILAA">
+<span class="font-medium text-xs text-on-surface truncate">Carlos Eduardo</span>
+</div>
+</td>
+<td class="px-3 py-3">
+<div class="inline-flex items-center gap-1.5 px-2 py-0.5 rounded-full bg-primary-fixed text-on-primary-fixed text-[11px] font-semibold">
+<span class="w-1.5 h-1.5 rounded-full bg-primary"></span>
+<span class="">Alta</span>
+</div>
+</td>
+<td class="px-3 py-3">
+<div class="flex items-center gap-2">
+<span class="px-2 py-0.5 rounded-md bg-primary-fixed-dim text-on-primary-fixed-variant text-[10px] font-bold tracking-tight uppercase whitespace-nowrap">
+                  Hoje às 18:00
+                </span>
+<span class="text-[11px] text-secondary font-mono">20/Mai</span>
+</div>
+</td>
+<td class="px-3 py-3">
+<div class="w-full">
+<div class="flex justify-between items-center mb-1 text-[10px] font-semibold text-secondary">
+<span class="">45%</span>
+</div>
+<div class="w-full h-1.5 rounded-full bg-surface-container overflow-hidden">
+<div class="h-full bg-primary rounded-full" style="width: 45%"></div>
+</div>
+</div>
+</td>
+<td class="px-4 py-3 text-right">
+<div class="relative inline-block text-left">
+<button aria-label="Ações da tarefa TK-1085" class="row-menu-btn p-1.5 rounded-lg text-secondary hover:text-on-surface hover:bg-surface-container transition-colors" type="button">
+<span class="material-symbols-outlined text-base">more_vert</span>
+</button>
+</div>
+</td>
+</tr>
+<!-- Row 3: Due Tomorrow (Média) -->
+<tr class="table-row group hover:bg-surface-container/60 transition-colors focus-within:bg-surface-container-low" tabindex="0">
+<td class="px-4 py-3 text-center">
+<input class="row-checkbox w-4 h-4 rounded text-primary focus:ring-primary accent-primary cursor-pointer" type="checkbox">
+</td>
+<td class="px-3 py-3 font-mono text-[11px] font-semibold text-secondary">
+              TK-1086
+            </td>
+<td class="px-3 py-3">
+<div class="flex flex-col">
+<a class="font-headline text-base font-semibold text-on-surface hover:text-primary transition-colors focus:outline-none focus:underline leading-tight" href="#">
+                  Prototipação de Micro-interações do Carrinho de Compras
+                </a>
+<span class="text-[11px] text-on-surface-variant font-body line-clamp-1 mt-0.5">
+                  Animações táteis de checkout express no Figma e spec de haptics para mobile.
+                </span>
+</div>
+</td>
+<td class="px-3 py-3">
+<span class="px-2.5 py-1 rounded-md bg-surface-container text-on-surface-variant text-[11px] font-medium whitespace-nowrap">
+                App Mobile
+              </span>
+</td>
+<td class="px-3 py-3">
+<div class="flex items-center gap-2">
+<div class="w-6 h-6 rounded-full bg-secondary-fixed flex items-center justify-center text-[10px] font-bold text-on-secondary-fixed">
+                  MG
+                </div>
+<span class="font-medium text-xs text-on-surface truncate">Marina Garcia</span>
+</div>
+</td>
+<td class="px-3 py-3">
+<div class="inline-flex items-center gap-1.5 px-2 py-0.5 rounded-full bg-secondary-container text-on-secondary-container text-[11px] font-semibold">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+<span class="">Média</span>
+</div>
+</td>
+<td class="px-3 py-3">
+<div class="flex items-center gap-2">
+<span class="px-2 py-0.5 rounded-md bg-surface-container text-on-surface-variant text-[10px] font-bold tracking-tight uppercase whitespace-nowrap">
+                  Amanhã
+                </span>
+<span class="text-[11px] text-secondary font-mono">21/Mai</span>
+</div>
+</td>
+<td class="px-3 py-3">
+<div class="w-full">
+<div class="flex justify-between items-center mb-1 text-[10px] font-semibold text-secondary">
+<span class="">90%</span>
+</div>
+<div class="w-full h-1.5 rounded-full bg-surface-container overflow-hidden">
+<div class="h-full bg-primary rounded-full" style="width: 90%"></div>
+</div>
+</div>
+</td>
+<td class="px-4 py-3 text-right">
+<div class="relative inline-block text-left">
+<button aria-label="Ações da tarefa TK-1086" class="row-menu-btn p-1.5 rounded-lg text-secondary hover:text-on-surface hover:bg-surface-container transition-colors" type="button">
+<span class="material-symbols-outlined text-base">more_vert</span>
+</button>
+</div>
+</td>
+</tr>
+<!-- Row 4: In Progress (Alta) -->
+<tr class="table-row group bg-surface-container-low/30 hover:bg-surface-container/60 transition-colors focus-within:bg-surface-container-low" tabindex="0">
+<td class="px-4 py-3 text-center">
+<input class="row-checkbox w-4 h-4 rounded text-primary focus:ring-primary accent-primary cursor-pointer" type="checkbox">
+</td>
+<td class="px-3 py-3 font-mono text-[11px] font-semibold text-secondary">
+              TK-1087
+            </td>
+<td class="px-3 py-3">
+<div class="flex flex-col">
+<a class="font-headline text-base font-semibold text-on-surface hover:text-primary transition-colors focus:outline-none focus:underline leading-tight" href="#">
+                  Integração de Webhooks com Plataforma ERP SAP
+                </a>
+<span class="text-[11px] text-on-surface-variant font-body line-clamp-1 mt-0.5">
+                  Processamento assíncrono de notas fiscais e conciliação bancária instantânea.
+                </span>
+</div>
+</td>
+<td class="px-3 py-3">
+<span class="px-2.5 py-1 rounded-md bg-surface-container text-on-surface-variant text-[11px] font-medium whitespace-nowrap">
+                Portal B2B
+              </span>
+</td>
+<td class="px-3 py-3">
+<div class="flex items-center gap-2">
+<img class="w-6 h-6 rounded-full object-cover" data-alt="Portrait of an analytical tech lead with thoughtful expression against warm beige wall, gentle daylight illuminating facial features" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDNWxHG8DrdqcuQlb68_VCIemrx6gcvQlndaOmwxA0jCawT3iMEZtif7BDDjsJgqlKDwC3b2METu2evZ40rO4a-eoqQujebHcx-GvLc0_uthX_V1gh-OTg5utC8GjYTTMS3pr5hFsWv0y74cCy-2bq3YYX71WfmZnfIN76DFPd2OqN0eqcrODjZ0pvKhnHozOqkTURTlYvSHhu8JDjOkxmMkV50lAODBOoJ5BfZMiMiTWB5mPZz4QcsbA">
+<span class="font-medium text-xs text-on-surface truncate">Rodrigo Nogueira</span>
+</div>
+</td>
+<td class="px-3 py-3">
+<div class="inline-flex items-center gap-1.5 px-2 py-0.5 rounded-full bg-primary-fixed text-on-primary-fixed text-[11px] font-semibold">
+<span class="w-1.5 h-1.5 rounded-full bg-primary"></span>
+<span class="">Alta</span>
+</div>
+</td>
+<td class="px-3 py-3">
+<div class="flex items-center gap-2">
+<span class="px-2 py-0.5 rounded-md bg-surface-container-high text-on-surface text-[10px] font-bold tracking-tight uppercase whitespace-nowrap">
+                  Em 4 dias
+                </span>
+<span class="text-[11px] text-secondary font-mono">24/Mai</span>
+</div>
+</td>
+<td class="px-3 py-3">
+<div class="w-full">
+<div class="flex justify-between items-center mb-1 text-[10px] font-semibold text-secondary">
+<span class="">30%</span>
+</div>
+<div class="w-full h-1.5 rounded-full bg-surface-container overflow-hidden">
+<div class="h-full bg-primary rounded-full" style="width: 30%"></div>
+</div>
+</div>
+</td>
+<td class="px-4 py-3 text-right">
+<div class="relative inline-block text-left">
+<button aria-label="Ações da tarefa TK-1087" class="row-menu-btn p-1.5 rounded-lg text-secondary hover:text-on-surface hover:bg-surface-container transition-colors" type="button">
+<span class="material-symbols-outlined text-base">more_vert</span>
+</button>
+</div>
+</td>
+</tr>
+<!-- Row 5: Low Priority Task -->
+<tr class="table-row group hover:bg-surface-container/60 transition-colors focus-within:bg-surface-container-low" tabindex="0">
+<td class="px-4 py-3 text-center">
+<input class="row-checkbox w-4 h-4 rounded text-primary focus:ring-primary accent-primary cursor-pointer" type="checkbox">
+</td>
+<td class="px-3 py-3 font-mono text-[11px] font-semibold text-secondary">
+              TK-1088
+            </td>
+<td class="px-3 py-3">
+<div class="flex flex-col">
+<a class="font-headline text-base font-semibold text-on-surface hover:text-primary transition-colors focus:outline-none focus:underline leading-tight" href="#">
+                  Atualização das Bibliotecas de Ícones SVG e Tokens de Espaçamento
+                </a>
+<span class="text-[11px] text-on-surface-variant font-body line-clamp-1 mt-0.5">
+                  Limpeza de bundles legados e normalização das propriedades de preenchimento vetorial.
+                </span>
+</div>
+</td>
+<td class="px-3 py-3">
+<span class="px-2.5 py-1 rounded-md bg-surface-container text-on-surface-variant text-[11px] font-medium whitespace-nowrap">
+                Design System v3
+              </span>
+</td>
+<td class="px-3 py-3">
+<div class="flex items-center gap-2">
+<div class="w-6 h-6 rounded-full bg-surface-variant flex items-center justify-center text-[10px] font-bold text-on-surface-variant">
+                  AS
+                </div>
+<span class="font-medium text-xs text-on-surface truncate">Ana Silveira</span>
+</div>
+</td>
+<td class="px-3 py-3">
+<div class="inline-flex items-center gap-1.5 px-2 py-0.5 rounded-full bg-surface-container text-secondary text-[11px] font-medium">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary/60"></span>
+<span class="">Baixa</span>
+</div>
+</td>
+<td class="px-3 py-3">
+<div class="flex items-center gap-2">
+<span class="px-2 py-0.5 rounded-md bg-surface-container text-on-surface-variant text-[10px] font-medium tracking-tight uppercase whitespace-nowrap">
+                  28/Mai
+                </span>
+<span class="text-[11px] text-secondary font-mono">Sprint 12</span>
+</div>
+</td>
+<td class="px-3 py-3">
+<div class="w-full">
+<div class="flex justify-between items-center mb-1 text-[10px] font-semibold text-secondary">
+<span class="">10%</span>
+</div>
+<div class="w-full h-1.5 rounded-full bg-surface-container overflow-hidden">
+<div class="h-full bg-secondary rounded-full" style="width: 10%"></div>
+</div>
+</div>
+</td>
+<td class="px-4 py-3 text-right">
+<div class="relative inline-block text-left">
+<button aria-label="Ações da tarefa TK-1088" class="row-menu-btn p-1.5 rounded-lg text-secondary hover:text-on-surface hover:bg-surface-container transition-colors" type="button">
+<span class="material-symbols-outlined text-base">more_vert</span>
+</button>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<!-- Floating Global Context Action Menu (Repositioned via JS) -->
+<div class="hidden absolute w-44 rounded-xl bg-surface-container-lowest shadow-2xl py-1.5 z-40" id="row-context-menu">
+<button class="w-full flex items-center gap-2.5 px-3.5 py-2 text-xs text-on-surface hover:bg-surface-container transition-colors text-left font-medium" type="button">
+<span class="material-symbols-outlined text-sm text-secondary">edit</span> Editar Tarefa
+      </button>
+<button class="w-full flex items-center gap-2.5 px-3.5 py-2 text-xs text-on-surface hover:bg-surface-container transition-colors text-left font-medium" type="button">
+<span class="material-symbols-outlined text-sm text-secondary">content_copy</span> Duplicar
+      </button>
+<button class="w-full flex items-center gap-2.5 px-3.5 py-2 text-xs text-on-surface hover:bg-surface-container transition-colors text-left font-medium" type="button">
+<span class="material-symbols-outlined text-sm text-secondary">history</span> Histórico &amp; Logs
+      </button>
+<div class="my-1 border-t-0 bg-surface-variant h-px"></div>
+<button class="w-full flex items-center gap-2.5 px-3.5 py-2 text-xs text-tertiary hover:bg-error-container/40 transition-colors text-left font-bold" type="button">
+<span class="material-symbols-outlined text-sm">delete</span> Excluir Tarefa
+      </button>
+</div>
+</div>
+<!-- Pagination Strip & Status -->
+<div class="flex flex-col sm:flex-row items-center justify-between gap-4 px-2 py-2 mb-6">
+<div class="flex items-center gap-3 text-xs text-on-surface-variant font-body">
+<span class="">Exibindo <strong class="font-semibold text-on-surface">1 - 5</strong> de <strong class="font-semibold text-on-surface">84</strong> tarefas</span>
+<span class="text-secondary/40">|</span>
+<div class="flex items-center gap-1.5">
+<span class="">Linhas por página:</span>
+<select class="px-2 py-1 rounded-md bg-surface-container text-xs font-medium text-on-surface focus:outline-none cursor-pointer">
+<option>5</option>
+<option selected="">15</option>
+<option>30</option>
+<option>50</option>
+</select>
+</div>
+</div>
+<!-- Nav Pagination Controls -->
+<nav aria-label="Navegação da tabela" class="flex items-center gap-1 text-xs">
+<button aria-label="Primeira Página" class="p-2 rounded-lg text-secondary hover:text-on-surface hover:bg-surface-container-high disabled:opacity-40 transition-colors" disabled="" type="button">
+<span class="material-symbols-outlined text-base">first_page</span>
+</button>
+<button aria-label="Página Anterior" class="p-2 rounded-lg text-secondary hover:text-on-surface hover:bg-surface-container-high disabled:opacity-40 transition-colors" disabled="" type="button">
+<span class="material-symbols-outlined text-base">chevron_left</span>
+</button>
+<button class="w-8 h-8 rounded-lg bg-primary text-on-primary font-bold shadow-sm flex items-center justify-center" type="button">1</button>
+<button class="w-8 h-8 rounded-lg text-on-surface-variant hover:bg-surface-container flex items-center justify-center transition-colors" type="button">2</button>
+<button class="w-8 h-8 rounded-lg text-on-surface-variant hover:bg-surface-container flex items-center justify-center transition-colors" type="button">3</button>
+<span class="px-1 text-secondary">...</span>
+<button class="w-8 h-8 rounded-lg text-on-surface-variant hover:bg-surface-container flex items-center justify-center transition-colors" type="button">6</button>
+<button aria-label="Próxima Página" class="p-2 rounded-lg text-secondary hover:text-on-surface hover:bg-surface-container-high transition-colors" type="button">
+<span class="material-symbols-outlined text-base">chevron_right</span>
+</button>
+<button aria-label="Última Página" class="p-2 rounded-lg text-secondary hover:text-on-surface hover:bg-surface-container-high transition-colors" type="button">
+<span class="material-symbols-outlined text-base">last_page</span>
+</button>
+</nav>
+</div>
+<!-- Bottom Panel: Visual Keyboard Shortcuts & Contextual Help (Nielsen Heuristics #10) -->
+<div class="rounded-2xl bg-surface-container-low p-5 shadow-sm">
+<div class="flex flex-col md:flex-row md:items-center justify-between gap-4">
+<!-- Title & Explanation -->
+<div class="flex items-start gap-3">
+<div class="w-9 h-9 rounded-xl bg-surface-container flex items-center justify-center text-primary mt-0.5 shadow-sm">
+<span class="material-symbols-outlined text-xl">keyboard</span>
+</div>
+<div>
+<h2 class="text-sm font-bold font-headline text-on-surface">Atalhos de Alta Velocidade &amp; Produtividade</h2>
+<p class="text-xs text-on-surface-variant font-body">Navegue e execute ações nas tarefas instantaneamente sem retirar as mãos do teclado.</p>
+</div>
+</div>
+<!-- Compact Badges Grid -->
+<div class="flex flex-wrap items-center gap-3 text-xs">
+<div class="flex items-center gap-2 px-2.5 py-1.5 rounded-lg bg-surface-container-lowest shadow-sm">
+<div class="flex items-center gap-0.5">
+<kbd class="px-1.5 py-0.5 rounded text-[10px] font-mono bg-surface-container text-on-surface font-semibold">J</kbd>
+<span class="text-secondary text-[10px]">/</span>
+<kbd class="px-1.5 py-0.5 rounded text-[10px] font-mono bg-surface-container text-on-surface font-semibold">K</kbd>
+</div>
+<span class="text-secondary text-[11px]">Navegar linhas</span>
+</div>
+<div class="flex items-center gap-2 px-2.5 py-1.5 rounded-lg bg-surface-container-lowest shadow-sm">
+<kbd class="px-2 py-0.5 rounded text-[10px] font-mono bg-surface-container text-on-surface font-semibold">Espaço</kbd>
+<span class="text-secondary text-[11px]">Marcar Pronta</span>
+</div>
+<div class="flex items-center gap-2 px-2.5 py-1.5 rounded-lg bg-surface-container-lowest shadow-sm">
+<kbd class="px-1.5 py-0.5 rounded text-[10px] font-mono bg-surface-container text-on-surface font-semibold">E</kbd>
+<span class="text-secondary text-[11px]">Editar</span>
+</div>
+<div class="flex items-center gap-2 px-2.5 py-1.5 rounded-lg bg-surface-container-lowest shadow-sm">
+<kbd class="px-1.5 py-0.5 rounded text-[10px] font-mono bg-surface-container text-on-surface font-semibold">N</kbd>
+<span class="text-secondary text-[11px]">Nova Tarefa</span>
+</div>
+<div class="flex items-center gap-2 px-2.5 py-1.5 rounded-lg bg-surface-container-lowest shadow-sm">
+<kbd class="px-1.5 py-0.5 rounded text-[10px] font-mono bg-surface-container text-on-surface font-semibold">Del</kbd>
+<span class="text-secondary text-[11px]">Excluir</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Modal / Dialog: Safety Confirmation on Bulk Delete (Error Prevention) -->
+<div class="hidden fixed inset-0 z-50 flex items-center justify-center p-4 bg-on-surface/40 backdrop-blur-sm transition-all" id="safety-delete-modal">
+<div class="relative w-full max-w-md rounded-2xl bg-surface-container-lowest p-6 shadow-2xl flex flex-col gap-4 animate-scaleUp">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-full bg-error-container flex items-center justify-center text-error">
+<span class="material-symbols-outlined text-xl">warning</span>
+</div>
+<div>
+<h3 class="font-headline text-lg font-bold text-on-surface">Excluir Tarefas Selecionadas?</h3>
+<p class="text-xs text-secondary font-label">Ação irreversível de acordo com a política de governança</p>
+</div>
+</div>
+<p class="text-xs text-on-surface-variant font-body leading-relaxed bg-surface-container-low p-3.5 rounded-xl">
+        Você está prestes a remover permanentemente <strong class="text-on-surface font-bold" id="modal-delete-count">2 tarefas</strong> e seus respectivos comentários, anexos e apontamentos de horas vinculados.
+      </p>
+<div class="flex items-center justify-end gap-2.5 pt-2">
+<button class="px-4 py-2 rounded-lg bg-surface-container text-on-surface text-xs font-semibold hover:bg-surface-container-high transition-colors" id="btn-cancel-modal" type="button">
+          Cancelar
+        </button>
+<button class="px-4 py-2 rounded-lg bg-tertiary text-on-tertiary text-xs font-bold hover:bg-on-tertiary-fixed-variant shadow-md transition-colors flex items-center gap-1.5" id="btn-confirm-delete" type="button">
+<span class="material-symbols-outlined text-sm">delete_forever</span>
+<span class="">Confirmar e Excluir</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Inline Script for Interactive States -->
+<script>
+    (function initTaskListFeatures() {
+      // Elements
+      const masterCheckbox = document.getElementById('master-checkbox');
+      const rowCheckboxes = document.querySelectorAll('.row-checkbox');
+      const bulkBar = document.getElementById('bulk-actions-bar');
+      const selectedCountEl = document.getElementById('selected-count');
+      const clearSelectionBtn = document.getElementById('btn-clear-selection');
+      const exportBtn = document.getElementById('export-btn');
+      const exportMenu = document.getElementById('export-menu');
+      const btnDensityComfortable = document.getElementById('btn-density-comfortable');
+      const btnDensityCompact = document.getElementById('btn-density-compact');
+      const tableRows = document.querySelectorAll('#task-table tbody tr');
+      const contextMenu = document.getElementById('row-context-menu');
+      const modal = document.getElementById('safety-delete-modal');
+      const triggerBulkDelete = document.getElementById('btn-trigger-bulk-delete');
+      const cancelModal = document.getElementById('btn-cancel-modal');
+      const confirmDelete = document.getElementById('btn-confirm-delete');
+      const modalDeleteCount = document.getElementById('modal-delete-count');
+      const searchInput = document.getElementById('task-search-input');
+
+      // Update Selection Toolbar
+      function updateBulkStatus() {
+        const checkedList = document.querySelectorAll('.row-checkbox:checked');
+        const count = checkedList.length;
+        if (count > 0) {
+          bulkBar.classList.remove('hidden');
+          bulkBar.classList.add('flex');
+          selectedCountEl.textContent = count;
+        } else {
+          bulkBar.classList.add('hidden');
+          bulkBar.classList.remove('flex');
+        }
+        if (masterCheckbox) {
+          masterCheckbox.checked = (count === rowCheckboxes.length && count > 0);
+          masterCheckbox.indeterminate = (count > 0 && count < rowCheckboxes.length);
+        }
+      }
+
+      // Checkbox event listeners
+      if (masterCheckbox) {
+        masterCheckbox.addEventListener('change', (e) => {
+          rowCheckboxes.forEach(cb => {
+            cb.checked = e.target.checked;
+          });
+          updateBulkStatus();
+        });
+      }
+
+      rowCheckboxes.forEach(cb => {
+        cb.addEventListener('change', updateBulkStatus);
+      });
+
+      if (clearSelectionBtn) {
+        clearSelectionBtn.addEventListener('click', () => {
+          rowCheckboxes.forEach(cb => cb.checked = false);
+          if (masterCheckbox) masterCheckbox.checked = false;
+          updateBulkStatus();
+        });
+      }
+
+      // Export menu toggle
+      if (exportBtn && exportMenu) {
+        exportBtn.addEventListener('click', (e) => {
+          e.stopPropagation();
+          exportMenu.classList.toggle('hidden');
+        });
+      }
+
+      // Density Toggles
+      if (btnDensityComfortable && btnDensityCompact) {
+        btnDensityCompact.addEventListener('click', () => {
+          btnDensityCompact.classList.add('bg-surface-container-lowest', 'text-primary', 'shadow-sm');
+          btnDensityComfortable.classList.remove('bg-surface-container-lowest', 'text-primary', 'shadow-sm');
+          tableRows.forEach(row => {
+            row.querySelectorAll('td').forEach(td => {
+              td.classList.remove('py-3');
+              td.classList.add('py-1.5');
+            });
+          });
+        });
+
+        btnDensityComfortable.addEventListener('click', () => {
+          btnDensityComfortable.classList.add('bg-surface-container-lowest', 'text-primary', 'shadow-sm');
+          btnDensityCompact.classList.remove('bg-surface-container-lowest', 'text-primary', 'shadow-sm');
+          tableRows.forEach(row => {
+            row.querySelectorAll('td').forEach(td => {
+              td.classList.remove('py-1.5');
+              td.classList.add('py-3');
+            });
+          });
+        });
+      }
+
+      // Context Action Menus
+      document.querySelectorAll('.row-menu-btn').forEach((btn) => {
+        btn.addEventListener('click', (e) => {
+          e.stopPropagation();
+          const rect = btn.getBoundingClientRect();
+          const parentRect = btn.closest('.relative.bg-surface-container-lowest').getBoundingClientRect();
+          
+          contextMenu.style.top = `${rect.bottom - parentRect.top + 4}px`;
+          contextMenu.style.right = `${parentRect.right - rect.right + 8}px`;
+          contextMenu.classList.remove('hidden');
+        });
+      });
+
+      // Close open popups when clicking outside
+      window.addEventListener('click', () => {
+        if (exportMenu && !exportMenu.classList.contains('hidden')) {
+          exportMenu.classList.add('hidden');
+        }
+        if (contextMenu && !contextMenu.classList.contains('hidden')) {
+          contextMenu.classList.add('hidden');
+        }
+      });
+
+      // Safety Modal confirmation
+      if (triggerBulkDelete && modal) {
+        triggerBulkDelete.addEventListener('click', () => {
+          const count = document.querySelectorAll('.row-checkbox:checked').length;
+          modalDeleteCount.textContent = `${count} ${count > 1 ? 'tarefas' : 'tarefa'}`;
+          modal.classList.remove('hidden');
+        });
+      }
+
+      if (cancelModal && modal) {
+        cancelModal.addEventListener('click', () => modal.classList.add('hidden'));
+      }
+
+      if (confirmDelete && modal) {
+        confirmDelete.addEventListener('click', () => {
+          // Visual mock removal of selected rows
+          document.querySelectorAll('.row-checkbox:checked').forEach(cb => {
+            const tr = cb.closest('tr');
+            if (tr) tr.remove();
+          });
+          modal.classList.add('hidden');
+          updateBulkStatus();
+        });
+      }
+
+      // Keyboard Shortcut listener for Ctrl+F
+      window.addEventListener('keydown', (e) => {
+        if ((e.ctrlKey || e.metaKey) && e.key.toLowerCase() === 'f') {
+          if (searchInput) {
+            e.preventDefault();
+            searchInput.focus();
+          }
+        }
+      });
+    })();
+  </script>
+</div></main></div>
+
+</body></html>

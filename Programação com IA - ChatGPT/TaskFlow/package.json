@@ -1,0 +1,13 @@
+{
+  "name": "taskflow-local",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Gerenciador local de tarefas e projetos TaskFlow",
+  "type": "module",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}
